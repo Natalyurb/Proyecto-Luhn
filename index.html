@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <!--Primer formulario  de entrada-->
+    <section id="page1">
+     <header>
+       <div class="cabeza">
+       <h1 class="subtitle">Paga tus servicios sin salir de casa.</h1>
+       <div class="menu"> 
+        <li>
+         <input id="Registrar" type="button" value="Registrar" >
+        </li>
+        <li>
+         <input id="Ingresar" type="button" value="Ingresar" >
+        </li>
+       </div>
+       </div>
+       <div class="contenedor-imagen">
+        <img src="imagen/image 12.svg" alt="" class="img">
+       </div>
+     </header>
+    </section>
+    <!--Segundo formulario de registro-->
+    <section id="page2" class="ocultar">
+     <header >
+       <div class="cabeza">
+        <h1 class="subtitle">Datos personales:</h2>
+       <div class="menu">
+        <input id="nombre" type="text" placeholder="Ingrese su nombre y apellido">
+        <p id="mensaje" class="result" ></p>
+        <input id="dni" type="number" placeholder="DNI">
+       </div>
+       </div>
+       <div class="contenedor-imagen">
+          <img src="imagen/image 12.svg" alt="" class="img">
+       </div>
+     </header>
+       <div class="next">
+          <O>
+            <button id="Siguiente" type="button" class="Siguiente" >Siguiente</button>
+          </O> 
+       </div>
+    </section>
+    <!--Tercer formulario de Validacion de tarjeta-->
+    <section id="page3" class="ocultar">
+     <header>
+       <div class="cabeza2">
+       <h1 class="title">Bienvenido a Servipay cominza a pagar tus servicios.</h1>
+       <h2 class="subtitle2">Validacion</h2>
+       <div class="menu2">
+        <input id="userNum" size="25" placeholder="Ingresar tarjeta" type="text" />
+       <div id="resultLuhn" class="resultado">
+         <p></p>
+       </div>
+        <input type="password" id="cvv" placeholder="CVV" maxlength="3">
+       </div>
+       </div>
+       <div class="contenedor-imagen2">
+          <img src="imagen/image 12.svg" alt="" class="img">
+       </div>
+     </header>
+       <div class="next2">
+         <O>
+          <button id="submitBtn" type="submit" class="Siguiente" >Siguiente</button>
+         </O> 
+       </div>
+    </section>
+    <!--Cuarto formulario de categorias de Servicios-->
+    <section id="page4" class="ocultar">
+     <header>
+       <div>
+        <h1 class="title2">Categorias</h1>
+       </div>
+       <div class="contenedor-imagen3"> 
+        <input type="image" name="botonenvio" src="imagen/barritas.svg" alt="enviar a opciones">
+       </div>
+       <div class="contenedor-imagen4"> 
+          <input type="image" name="botonenvio1" src="imagen/imagen casa.svg" alt="enviar a opciones">
+          <h3>Hogar</h1>
+       </div>
+       <div class="contenedor-imagen5"> 
+          <input type="image" name="botonenvio1" src="imagen/tarjetas.svg" alt="enviar a opciones">
+          <h3>Tarjetas</h1>
+       </div>
+       <div class="contenedor-imagen6"> 
+          <input type="image" name="botonenvio1" src="imagen/estudios.svg" alt="enviar a opciones">
+          <h3>Estudios</h1>
+       </div>
+       <div class="contenedor-imagen7"> 
+          <input type="image" name="botonenvio1" src="imagen/tramites.svg" alt="enviar a opciones">
+          <h3>Tramites</h1>
+       </div>
+     </header>
+       <div class="next3">
+         <O>
+          <button id="Salir" type="submit" class="Salir" >Salir</button>
+         </O> 
+       </div>
+    </section>
+  <script src="index.js" type="module"></script>
+  </body>
+</html>
+
